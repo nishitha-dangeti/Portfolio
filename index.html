@@ -3,7 +3,14 @@
   <head>
     <meta charset="utf-8">
     <title>Sai Nishitha Portfolio</title>
+    <meta name="description" content="Portfolio of Sai Nishitha, a full stack developer with a Master's in Information Technology.">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Sai Nishitha Portfolio">
+    <meta property="og:description" content="Full stack developer with a Master's in Information Technology. Projects, education and experience.">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Rubik:wght@500;700;900&display=swap">
     <link rel="stylesheet" href="./assets/style/style.css" type="text/css">
     <link rel="stylesheet" href="./assets/style/red.css" type="text/css">
     <!-- Theme Switcher -->
@@ -15,7 +22,7 @@
     <!-- Theme Switcher End -->
     <link rel="stylesheet" href="./assets/style/themeSwitcher.css" type="text/css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<link rel="icon" href="assets/style/0be8c614b74068e5-sticker.png" type="image/x-icon">
+<link rel="icon" href="assets/style/0be8c614b74068e5-sticker.png" type="image/png">
 
   </head>
   <body>
@@ -30,9 +37,9 @@
       <!-- Aside -->
       <div class="aside">
         <!-- Nav Toggler Button -->
-        <div class="nav-toggler">
+        <button class="nav-toggler" type="button" aria-label="Toggle navigation" aria-expanded="false">
           <span></span>
-        </div>
+        </button>
         <!-- Nav Toggler Button End -->
         <div class="aside-inner">
         <!-- Logo -->
@@ -52,7 +59,7 @@
         <!-- Navbar End -->
         <!-- Copyright -->
         <footer>
-         <small> &copy; 2025 Sai Nishitha</small>
+         <small> &copy; <span id="year">2025</span> Sai Nishitha</small>
         </footer>
         <!-- Copyright End -->
       </div>
@@ -64,14 +71,14 @@
         <section class="home section active" id="home">
           <div class="container">
             <div class="intro">
-             <img src="https://i.ibb.co/bvF6Htp/Profile.jpg" alt="profile-image" border="0">
+             <img src="https://i.ibb.co/bvF6Htp/Profile.jpg" alt="Portrait of Sai Nishitha">
               <h1>Sai Nishitha</h1>
               <p>Full Stack Developer | Master's in Information Technology | Enthusiastic Problem Solver</p>
               <div class="social-link">
-                <a href="https://www.instagram.com/sai_nishithaa/?hl=en" target="_blank"> <i class="fa fa-instagram"></i> </a>
-                <a href="https://www.linkedin.com/in/sai-nishitha-dangeti/" target="_blank"> <i class="fa fa-linkedin"></i> </a>
-                <a href="mailto:sainishithadangeti@gmail.com" target="_blank"> <i class="fa fa-envelope-o"></i> </a>
-                <a href="https://github.com/Nishitha393" target="_blank"> <i class="fa fa-github"></i> </a>
+                <a href="https://www.instagram.com/sai_nishithaa/?hl=en" target="_blank" rel="noopener noreferrer" aria-label="Instagram"> <i class="fa fa-instagram" aria-hidden="true"></i> </a>
+                <a href="https://www.linkedin.com/in/sai-nishitha-dangeti/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"> <i class="fa fa-linkedin" aria-hidden="true"></i> </a>
+                <a href="mailto:sainishithadangeti@gmail.com" aria-label="Email"> <i class="fa fa-envelope-o" aria-hidden="true"></i> </a>
+                <a href="https://github.com/Nishitha393" target="_blank" rel="noopener noreferrer" aria-label="GitHub"> <i class="fa fa-github" aria-hidden="true"></i> </a>
               </div>
             </div>
           </div>
@@ -89,19 +96,15 @@
               <div class="about-content padd-15">
                 <div class="row">
                   <div class="about-text padd-15">
-                    <h3 >Hello There!</h3>
-                    <p>Full Stack Developer | Master's in Information Technology | Enthusiastic Problem Solver
-              </p>
+                    <h3>Hello There!</h3>
+                    <p>I'm a full stack developer with a Master's in Information Technology from the University of Cincinnati. I've worked on deploying applications across cloud and on-premises environments, test automation, and media analysis, and I enjoy solving problems.</p>
                   </div>
                 </div>
                 <div class="row">
                   <div class="personal-info padd-15">
                     <div class="row">
                       <div class="info-item padd-15">
-                        <p>Birthday : <span>30 October 2000</span> </p>
-                      </div>
-                      <div class="info-item padd-15">
-                        <p>City : <span>United States of America</span> </p>
+                        <p>Location : <span>Ohio, United States</span> </p>
                       </div>
                       <div class="info-item padd-15">
                         <p>Mail : <span>sainishithadangeti@gmail.com</span> </p>
@@ -110,108 +113,33 @@
                         <p>Hobbies : <span>Drawing & Painting</span> </p>
                       </div>
                     </div>
-                    <div class="row">
-                      <div class="buttons padd-15">
-                        <a href="https://drive.google.com/file/d/1L6eAHv47ZcXxABwhQd85jsrdx7AS8cC6/view?usp=sharing" download target="_blank"class="btn">Download Resume</a>
-                      </div>
-                    </div>
                   </div>
                   <div class="skills padd-15">
                     <div class="row">
                       <h1 class="padd-15">Languages</h1>
-                      <div class="skill-item languages padd-15">
-                        <h4>C</h4>
-                        <div class="progress">
-                          <div class="progress-in" style="width: 100%"></div>
-                            <div class="skill-percent">
-                              100%
-                          </div>
-                        </div>
-                      </div>
-                      <div class="skill-item languages padd-15">
-                        <h4>C++</h4>
-                        <div class="progress">
-                          <div class="progress-in" style="width: 100%"></div>
-                            <div class="skill-percent">
-                              100%
-                          </div>
-                        </div>
-                      </div>
-                      <div class="skill-item languages padd-15">
-                        <h4>Python</h4>
-                        <div class="progress">
-                          <div class="progress-in" style="width: 100%"></div>
-                            <div class="skill-percent">
-                              100%
-                          </div>
-                        </div>
-                      </div>
-                    </div>
+                      <ul class="skill-tags padd-15">
+                        <li>C</li>
+                        <li>C++</li>
+                        <li>Python</li>
+                      </ul></div>
                   </div>
                   <div class="skills padd-15">
                     <div class="row">
                       <h1 class="padd-15">IT Constructs</h1>
-                      <div class="skill-item IT_Constructs padd-15">
-                        <h4>Data Structures</h4>
-                        <div class="progress">
-                          <div class="progress-in" style="width: 100%"></div>
-                            <div class="skill-percent">
-                              100%
-                          </div>
-                        </div>
-                      </div>
-                      <div class="skill-item IT_Constructs padd-15">
-                        <h4>Algorithms</h4>
-                        <div class="progress">
-                          <div class="progress-in" style="width: 100%"></div>
-                            <div class="skill-percent">
-                              100%
-                          </div>
-                        </div>
-                      </div>
-                      <div class="skill-item IT_Constructs padd-15">
-                        <h4>Problem Solving</h4>
-                        <div class="progress">
-                          <div class="progress-in" style="width: 100%"></div>
-                            <div class="skill-percent">
-                              100%
-                          </div>
-                        </div>
-                      </div>
-                    </div>
+                      <ul class="skill-tags padd-15">
+                        <li>Data Structures</li>
+                        <li>Algorithms</li>
+                        <li>Problem Solving</li>
+                      </ul></div>
                   </div>
                   <div class="skills padd-15">
                     <div class="row">
                       <h1 class="padd-15">New Technologies</h1>
-                      <div class="skill-item web-technologies padd-15">
-                        <h4>Data Visualisation</h4>
-                        <div class="progress">
-                          <div class="progress-in" style="width: 100%"></div>
-                            <div class="skill-percent">
-                              100%
-                          </div>
-                        </div>
-                      </div>
-                      <div class="skill-item web-technologies padd-15">
-                        <h4>Data Analytics</h4>
-                        <div class="progress">
-                          <div class="progress-in" style="width: 100%"></div>
-                            <div class="skill-percent">
-                              100%
-                          </div>
-                        </div>
-                      </div>
-                      <div class="skill-item web-technologies padd-15">
-                        <h4>SQL for Data Science</h4>
-                        <div class="progress">
-                          <div class="progress-in" style="width: 100%"></div>
-                            <div class="skill-percent">
-                              100%
-                          </div>
-                        </div>
-                      </div>
-                     
-                    </div>
+                      <ul class="skill-tags padd-15">
+                        <li>Data Visualisation</li>
+                        <li>Data Analytics</li>
+                        <li>SQL for Data Science</li>
+                      </ul></div>
                   </div>
                 </div>
                 <div class="row">
@@ -304,9 +232,14 @@
                               September, 2024 - Present
                             </h6>
                             <h4 class="timeline-title">Stealth AI Startup</h4>
-                            <p class="timeline-text">Deployed applications in diverse environments including AWS, GCP, Azure, and on-premises servers (Windows, Linux - RHEL, SUSE, CentOS).Integrated Amazon Recognition with OpenText Product for enhanced functionality.Led test automation efforts, successfully automated four features, and managed approximately 250 test cases.Proficient in debugging code and specialized in media analysis to extract valuable data from images and videos.
-
-                            </p>
+                            <div class="timeline-text">
+                              <ul class="timeline-list">
+                                <li>Deployed applications in diverse environments including AWS, GCP, Azure, and on-premises servers (Windows, Linux - RHEL, SUSE, CentOS).</li>
+                                <li>Integrated Amazon Rekognition with OpenText Product for enhanced functionality.</li>
+                                <li>Led test automation efforts, successfully automated four features, and managed approximately 250 test cases.</li>
+                                <li>Proficient in debugging code and specialized in media analysis to extract valuable data from images and videos.</li>
+                              </ul>
+                            </div>
 							</div>
 
 
@@ -323,9 +256,14 @@
                               January, 2022 - July, 2023
                             </h6>
                             <h4 class="timeline-title">OpenText Technologies India Private Limited</h4>
-                            <p class="timeline-text">Deployed applications in diverse environments including AWS, GCP, Azure, and on-premises servers (Windows, Linux - RHEL, SUSE, CentOS).Integrated Amazon Recognition with OpenText Product for enhanced functionality.Led test automation efforts, successfully automated four features, and managed approximately 250 test cases.Proficient in debugging code and specialized in media analysis to extract valuable data from images and videos.
-
-                            </p>
+                            <div class="timeline-text">
+                              <ul class="timeline-list">
+                                <li>Deployed applications in diverse environments including AWS, GCP, Azure, and on-premises servers (Windows, Linux - RHEL, SUSE, CentOS).</li>
+                                <li>Integrated Amazon Rekognition with OpenText Product for enhanced functionality.</li>
+                                <li>Led test automation efforts, successfully automated four features, and managed approximately 250 test cases.</li>
+                                <li>Proficient in debugging code and specialized in media analysis to extract valuable data from images and videos.</li>
+                              </ul>
+                            </div>
 							</div>
 							                          <div class="timeline-item">
 							<div class="circle-dot">
@@ -335,7 +273,7 @@
                               <i class="fa fa-calendar"></i>
                               September, 2020 - October, 2020
                             </h6>
-                            <h4 class="timeline-title">Technex IIT BHU Varnasi, Python Developer</h4>
+                            <h4 class="timeline-title">Technex IIT BHU Varanasi, Python Developer</h4>
                             <p class="timeline-text">Developed and presented a language translator that
 supports around 108 languages. Analyzed and developed the project in Python using Tkinter
 and google trans. Submitted a report on the project. Received career guidance in the data analysis domain. Successfully received the internship certification offered by
@@ -386,7 +324,7 @@ internship.
               <div class="project-item padd-15">
                 <div class="project-item-inner shadow-dark">
                   <div class="project-img">
-                    <img src="https://i.ibb.co/SNZMghd/13.jpg" alt="">
+                    <img src="https://i.ibb.co/SNZMghd/13.jpg" alt="E-eaters food ordering website preview" loading="lazy">
                   </div>
                   <div class="project-info">
                     <h4 class="project-title">E-eaters (Online Food Ordering System)</h4>
@@ -394,7 +332,7 @@ internship.
 					Technologies used are HTML, CSS, Java, and MySQL for the backend.
                     </p>
                     <div class="buttons">
-                      <a href="https://github.com/Nishitha393/E-eaters" class="btn">View Project</a>
+                      <a href="https://github.com/Nishitha393/E-eaters" target="_blank" rel="noopener noreferrer" class="btn">View Project</a>
                     </div>
                   </div>
                 </div>
@@ -402,7 +340,7 @@ internship.
               <div class="project-item padd-15">
                 <div class="project-item-inner shadow-dark">
                   <div class="project-img">
-                    <img src="https://i.ibb.co/hW8b0fv/trans.jpg" alt="">
+                    <img src="https://i.ibb.co/hW8b0fv/trans.jpg" alt="Language translator app preview" loading="lazy">
                   </div>
                   <div class="project-info">
                     <h4 class="project-title">Language Translator using Python</h4>
@@ -413,7 +351,7 @@ In this project, the user enters text in any language and gets it translated int
 Language Translator using Google Translate APIs in Python – Instantly Translate texts, words, and phrases from one language to another.
                     </p>
                     <div class="buttons">
-                      <a href="https://github.com/Nishitha393/Language-Translator" class="btn">View Project</a>
+                      <a href="https://github.com/Nishitha393/Language-Translator" target="_blank" rel="noopener noreferrer" class="btn">View Project</a>
                     </div>
                   </div>
                 </div>
@@ -421,7 +359,7 @@ Language Translator using Google Translate APIs in Python – Instantly Translat
 			  <div class="project-item padd-15">
                 <div class="project-item-inner shadow-dark">
                   <div class="project-img">
-                    <img src="https://i.ibb.co/7x3JMv3/forum.png" alt="">
+                    <img src="https://i.ibb.co/7x3JMv3/forum.png" alt="Dexterity Forum website preview" loading="lazy">
                   </div>
                   <div class="project-info">
                     <h4 class="project-title">Dexterity Forum</h4>
@@ -429,7 +367,7 @@ Language Translator using Google Translate APIs in Python – Instantly Translat
 					The dexterity forum project is developed using PHP and MySQL and is based on the idea of sharing knowledge using the internet. The project is made up of two modules users and admin. Users can register themselves, ask questions, and answer anyone’s question, approve an answer given to asked question. Admin can create read update and delete notifications. Discussion forums can be successful in enhancing collaborative learning by attracting students to participate and interact.
                     </p>
                     <div class="buttons">
-                      <a href="https://github.com/Nishitha393/Dexterity_forum" class="btn">View Project</a>
+                      <a href="https://github.com/Nishitha393/Dexterity_forum" target="_blank" rel="noopener noreferrer" class="btn">View Project</a>
                     </div>
                   </div>
                 </div>
@@ -472,54 +410,45 @@ Language Translator using Google Translate APIs in Python – Instantly Translat
                     </div>
                     <div class="row padd-15">
                       <div class="buttons">
-                        <a href="mailto:sainishithadangeti@gmail.com" class="btn contact-btn">Mail Me !!</a>
+                        <a href="mailto:sainishithadangeti@gmail.com" class="btn contact-btn">Mail Me</a>
                       </div>
                     </div>
                     <!-- Contact Form End-->
                   </div>
               </section>
-
-              <!-- Contact Section End -->
-            </div>
-          </div>
-        </div>
-        <!-- Projects Section End -->
-      </div>
-      <!-- Main Content End -->
+      <!-- Contact Section End -->
     </div>
-    <!-- Main Container End -->
+    <!-- Main Content End -->
+  </div>
+  <!-- Main Container End -->
     <!-- Theme Switcher -->
     <div class="theme-switch">
-      <div class="toggle-theme-switcher">
-        <i class="fa fa-cog fa-spin"></i>
-      </div>
+      <button class="toggle-theme-switcher" type="button" aria-label="Open theme settings" aria-expanded="false">
+        <i class="fa fa-cog fa-spin" aria-hidden="true"></i>
+      </button>
       <h5>Theme Switch</h5>
       <ul>
-        <li> <a href="javascript:void(0);" title="red" style="background-color: #e40017;" onclick="setActiveStyle('red')"></a> </li>
-        <li> <a href="javascript:void(0);" title="blue" style="background-color: #0779e4;" onclick="setActiveStyle('blue')"></a> </li>
-        <li> <a href="javascript:void(0);" title="green" style="background-color: #57d131;" onclick="setActiveStyle('green')"></a> </li>
-        <li> <a href="javascript:void(0);" title="purple" style="background-color: #a100ff;" onclick="setActiveStyle('purple')"></a> </li>
-        <li> <a href="javascript:void(0);" title="yellow" style="background-color: #ffcc00;" onclick="setActiveStyle('yellow')"></a> </li>
+        <li><button type="button" class="theme-swatch" data-theme="red" title="red" aria-label="Red theme" style="background-color: #e40017;"></button></li>
+        <li><button type="button" class="theme-swatch" data-theme="blue" title="blue" aria-label="Blue theme" style="background-color: #0779e4;"></button></li>
+        <li><button type="button" class="theme-swatch" data-theme="green" title="green" aria-label="Green theme" style="background-color: #57d131;"></button></li>
+        <li><button type="button" class="theme-swatch" data-theme="purple" title="purple" aria-label="Purple theme" style="background-color: #a100ff;"></button></li>
+        <li><button type="button" class="theme-swatch" data-theme="yellow" title="yellow" aria-label="Yellow theme" style="background-color: #ffcc00;"></button></li>
       </ul>
       <h5>Mode Switch</h5>
       <label>
-        <input type="radio" class="mode-switch" name="body-mode" value="light" checked="true">
+        <input type="radio" class="mode-switch" name="body-mode" value="light" checked>
         Light
       </label>
-      <label >
+      <label>
         <input type="radio" class="mode-switch" name="body-mode" value="dark">
         Dark
       </label>
     </div>
     <!-- Theme Switcher End -->
     <!-- Template Js -->
-    <script src="./assets/script/script.js">
-
-    </script>
+    <script src="./assets/script/script.js"></script>
       <!-- JavaScript for Theme Switcher -->
-      <script src="./assets/script/themeSwitcher.js">
-
-      </script>
+      <script src="./assets/script/themeSwitcher.js"></script>
     <!-- JavaScript for Theme Switcher End -->
   </body>
 </html>

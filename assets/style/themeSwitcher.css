@@ -35,13 +35,13 @@
 .theme-switch ul li{
   display: inline-block;
 }
-.theme-switch ul li a{
+.theme-switch ul li .theme-swatch{
   width: 30px;
   height: 30px;
   display: block;
+  border: none;
   border-radius: 50%;
   cursor: pointer;
-  text-decoration: none;
   margin-right: 2px;
 }
 .theme-switch .toggle-theme-switcher{
