@@ -3,468 +3,217 @@
   <head>
     <meta charset="utf-8">
     <title>Sai Nishitha Portfolio</title>
-    <meta name="description" content="Portfolio of Sai Nishitha, a full stack developer with a Master's in Information Technology.">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Sai Nishitha is a full stack developer who builds surveillance platforms, AI agents, MCP servers and internal tools.">
     <meta property="og:type" content="website">
     <meta property="og:title" content="Sai Nishitha Portfolio">
-    <meta property="og:description" content="Full stack developer with a Master's in Information Technology. Projects, education and experience.">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta property="og:description" content="Full stack developer building surveillance platforms, AI agents and internal tools.">
+    <link rel="icon" href="assets/style/0be8c614b74068e5-sticker.png" type="image/png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Rubik:wght@500;700;900&display=swap">
-    <link rel="stylesheet" href="./assets/style/style.css" type="text/css">
-    <link rel="stylesheet" href="./assets/style/red.css" type="text/css">
-    <!-- Theme Switcher -->
-    <link rel="stylesheet" title="purple" class="alternate-style" href="./assets/style/purple.css" type="text/css" disabled>
-    <link rel="stylesheet" title="red" class="alternate-style" href="./assets/style/red.css" type="text/css" disabled>
-    <link rel="stylesheet" title="yellow" class="alternate-style" href="./assets/style/yellow.css" type="text/css" disabled>
-    <link rel="stylesheet" title="green" class="alternate-style" href="./assets/style/green.css" type="text/css" disabled>
-    <link rel="stylesheet" title="blue" class="alternate-style" href="./assets/style/blue.css" type="text/css" disabled>
-    <!-- Theme Switcher End -->
-    <link rel="stylesheet" href="./assets/style/themeSwitcher.css" type="text/css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<link rel="icon" href="assets/style/0be8c614b74068e5-sticker.png" type="image/png">
-
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700&family=Literata:ital,opsz,wght@0,7..72,400;0,7..72,600;1,7..72,400&display=swap">
+    <link rel="stylesheet" href="./assets/style/style.css">
+    <script>
+      // Apply the saved or system theme before the page paints, to avoid a flash.
+      try {
+        var saved = localStorage.getItem("portfolio-theme");
+        if (!saved && window.matchMedia("(prefers-color-scheme: dark)").matches) { saved = "dark"; }
+        if (saved === "dark") { document.documentElement.setAttribute("data-theme", "dark"); }
+      } catch (e) {}
+    </script>
   </head>
   <body>
-    <!-- Preloader -->
-    <div class="preloader">
-      <div class="loader">
-      </div>
-    </div>
-    <!-- Preloader End -->
-    <!-- Main Container -->
-    <div class="main-container">
-      <!-- Aside -->
-      <div class="aside">
-        <!-- Nav Toggler Button -->
-        <button class="nav-toggler" type="button" aria-label="Toggle navigation" aria-expanded="false">
-          <span></span>
-        </button>
-        <!-- Nav Toggler Button End -->
-        <div class="aside-inner">
-        <!-- Logo -->
-        <div class="logo">
-          <a href="index.html">Sai Nishitha</a>
-        </div>
-        <!-- Logo End -->
-        <!-- Navbar -->
-        <nav class="nav">
-        <ul>
-          <li><a href="#home" class="active"> Home </a></li>
-          <li><a href="#about"> About Me</a></li>
-          <li><a href="#projects"> Projects </a></li>
-          <li><a href="#contact"> Contact </a></li>
-        </ul>
+    <a class="skip-link" href="#main">Skip to content</a>
+
+    <header class="site-header">
+      <div class="wrap header-inner">
+        <a class="brand" href="#top">Sai Nishitha</a>
+        <nav aria-label="Main">
+          <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
         </nav>
-        <!-- Navbar End -->
-        <!-- Copyright -->
-        <footer>
-         <small> &copy; <span id="year">2025</span> Sai Nishitha</small>
-        </footer>
-        <!-- Copyright End -->
+        <button class="theme-toggle" id="theme-toggle" type="button" aria-pressed="false">Dark mode</button>
       </div>
+    </header>
+
+    <main id="main">
+      <!-- Hero -->
+      <section class="hero" id="top">
+        <div class="wrap">
+          <h1>I build surveillance platforms and the tools that help teams move faster.</h1>
+          <p class="lede">I'm Sai Nishitha, a full stack developer. At FINRA I work on detection patterns, MCP servers, agents and dashboards.</p>
+          <p class="actions">
+            <a class="button" href="mailto:sainishithadangeti@gmail.com">Email me</a>
+            <a class="text-link" href="https://www.linkedin.com/in/sai-nishitha-dangeti/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+            <a class="text-link" href="https://github.com/Nishitha393" target="_blank" rel="noopener noreferrer">GitHub</a>
+          </p>
+        </div>
+        <div class="signal" id="signal" aria-hidden="true">
+          <svg viewBox="0 0 1200 240" preserveAspectRatio="none" focusable="false">
+            <path id="signal-path" d=""></path>
+          </svg>
+          <span class="flag-ring" id="flag-ring"></span>
+          <span class="flag-label" id="flag-label">Flagged for review</span>
+        </div>
+        <div class="wrap">
+          <p class="signal-note">Illustration: a signal trace with one outlier flagged.</p>
+        </div>
+      </section>
+
+      <!-- About -->
+      <section class="section" id="about">
+        <div class="wrap section-grid">
+          <h2>About</h2>
+          <div class="section-body">
+            <div class="about-intro">
+              <img class="portrait" src="https://i.ibb.co/bvF6Htp/Profile.jpg" alt="Portrait of Sai Nishitha" width="160" height="160" loading="lazy">
+              <div class="prose">
+                <p>I'm a full stack developer with a Master's in Information Technology from the University of Cincinnati.</p>
+                <p>Right now I'm a contractor at FINRA, where I build surveillance platforms and the detection patterns behind them. I also build MCP servers, agents, dashboards and internal utilities that make my team's work easier.</p>
+                <p>Before that I built the frontend and backend of an AI product at a startup. Earlier, at OpenText, I worked on cloud deployments and test automation.</p>
+              </div>
+            </div>
+
+            <h3 class="subhead">Education</h3>
+            <ul class="plain-list">
+              <li>
+                <strong>University of Cincinnati</strong>
+                Master of Science in Information Technology, 2023 to present, 3.9/4.0 GPA
+              </li>
+              <li>
+                <strong>CMR College of Engineering and Technology, Hyderabad</strong>
+                Bachelor of Technology in Computer Science and Engineering, 2018 to 2022, 9.12/10 CGPA
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <!-- Experience -->
+      <section class="section" id="experience">
+        <div class="wrap section-grid">
+          <h2>Experience</h2>
+          <div class="section-body">
+            <article class="entry">
+              <p class="entry-date">March 2025 to present</p>
+              <div class="entry-body">
+                <h3>FINRA</h3>
+                <p class="entry-role">Contractor</p>
+                <ul>
+                  <li>Build surveillance platforms and the detection patterns behind them, helping analysts identify and investigate activity of interest.</li>
+                  <li>Build MCP servers and AI agents that automate routine work and give teams simpler access to data and tools.</li>
+                  <li>Create dashboards and internal utilities that turn complex data into clear, usable views and make the team's day-to-day work easier.</li>
+                </ul>
+              </div>
+            </article>
+
+            <article class="entry">
+              <p class="entry-date">September 2024 to March 2025</p>
+              <div class="entry-body">
+                <h3>Stealth AI startup</h3>
+                <ul>
+                  <li>Built the user-facing frontend of an AI product using React.</li>
+                  <li>Developed the backend APIs in Python with FastAPI.</li>
+                  <li>Deployed the application on AWS using serverless Lambda functions.</li>
+                </ul>
+              </div>
+            </article>
+
+            <article class="entry">
+              <p class="entry-date">January 2022 to July 2023</p>
+              <div class="entry-body">
+                <h3>OpenText Technologies India Private Limited</h3>
+                <ul>
+                  <li>Deployed applications in diverse environments including AWS, GCP, Azure, and on-premises servers (Windows, Linux - RHEL, SUSE, CentOS).</li>
+                  <li>Integrated Amazon Rekognition with an OpenText product for enhanced functionality.</li>
+                  <li>Led test automation efforts, automating four features and managing approximately 250 test cases.</li>
+                  <li>Debugged code and specialized in media analysis to extract data from images and videos.</li>
+                </ul>
+              </div>
+            </article>
+
+            <article class="entry">
+              <p class="entry-date">September to October 2020</p>
+              <div class="entry-body">
+                <h3>Technex, IIT BHU Varanasi</h3>
+                <p class="entry-role">Python developer intern</p>
+                <ul>
+                  <li>Built and presented a language translator that supports around 108 languages, using Python, Tkinter and googletrans.</li>
+                  <li>Submitted a project report and earned the internship certification.</li>
+                </ul>
+              </div>
+            </article>
+
+            <article class="entry">
+              <p class="entry-date">May to June 2020</p>
+              <div class="entry-body">
+                <h3>Dexterity Global Group</h3>
+                <p class="entry-role">Research intern, technology sector</p>
+                <ul>
+                  <li>Selected as one of 1,000 interns at a Forbes 30 Under 30 organization.</li>
+                  <li>Researched and presented an improved quiz platform for students across India, and prototyped a Dialogflow chatbot for it.</li>
+                  <li>Developed a knowledge-sharing forum for students using PHP and MySQL.</li>
+                  <li>Received an "Excellent" grade for the internship.</li>
+                </ul>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- Skills -->
+      <section class="section" id="skills">
+        <div class="wrap section-grid">
+          <h2>Skills</h2>
+          <div class="section-body skill-groups">
+            <div>
+              <h3 class="subhead">Build</h3>
+              <p>Python, FastAPI, React, C, C++, data structures, algorithms</p>
+            </div>
+            <div>
+              <h3 class="subhead">AI and agents</h3>
+              <p>MCP servers, AI agents, media analysis with Amazon Rekognition</p>
+            </div>
+            <div>
+              <h3 class="subhead">Data</h3>
+              <p>SQL for data science, data analytics, data visualisation, dashboards</p>
+            </div>
+            <div>
+              <h3 class="subhead">Cloud and delivery</h3>
+              <p>AWS Lambda, GCP, Azure, Linux and Windows servers, test automation</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Contact -->
+      <section class="section" id="contact">
+        <div class="wrap section-grid">
+          <h2>Contact</h2>
+          <div class="section-body">
+            <p class="contact-lede">The best way to reach me is email.</p>
+            <p class="contact-email"><a href="mailto:sainishithadangeti@gmail.com">sainishithadangeti@gmail.com</a></p>
+            <ul class="plain-list inline-links">
+              <li><a href="https://www.linkedin.com/in/sai-nishitha-dangeti/" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
+              <li><a href="https://github.com/Nishitha393" target="_blank" rel="noopener noreferrer">GitHub</a></li>
+              <li><a href="https://www.instagram.com/sai_nishithaa/?hl=en" target="_blank" rel="noopener noreferrer">Instagram</a></li>
+            </ul>
+            <p class="location">Based in Ohio, United States.</p>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="wrap">
+        <small>&copy; <span id="year">2026</span> Sai Nishitha</small>
       </div>
-      <!-- Aside End -->
-      <!-- Main Content -->
-      <div class="main-content">
-        <!-- Home Section -->
-        <section class="home section active" id="home">
-          <div class="container">
-            <div class="intro">
-             <img src="https://i.ibb.co/bvF6Htp/Profile.jpg" alt="Portrait of Sai Nishitha">
-              <h1>Sai Nishitha</h1>
-              <p>Full Stack Developer | Master's in Information Technology | Enthusiastic Problem Solver</p>
-              <div class="social-link">
-                <a href="https://www.instagram.com/sai_nishithaa/?hl=en" target="_blank" rel="noopener noreferrer" aria-label="Instagram"> <i class="fa fa-instagram" aria-hidden="true"></i> </a>
-                <a href="https://www.linkedin.com/in/sai-nishitha-dangeti/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"> <i class="fa fa-linkedin" aria-hidden="true"></i> </a>
-                <a href="mailto:sainishithadangeti@gmail.com" aria-label="Email"> <i class="fa fa-envelope-o" aria-hidden="true"></i> </a>
-                <a href="https://github.com/Nishitha393" target="_blank" rel="noopener noreferrer" aria-label="GitHub"> <i class="fa fa-github" aria-hidden="true"></i> </a>
-              </div>
-            </div>
-          </div>
-        </section>
-        <!-- Home Section End -->
-        <!-- About Section -->
-        <section class="about section" id="about">
-          <div class="container">
-            <div class="row">
-              <div class="section-title padd-15">
-                <h2>About Me</h2>
-              </div>
-            </div>
-            <div class="row">
-              <div class="about-content padd-15">
-                <div class="row">
-                  <div class="about-text padd-15">
-                    <h3>Hello There!</h3>
-                    <p>I'm a full stack developer with a Master's in Information Technology from the University of Cincinnati. I'm currently a contractor at FINRA, building surveillance platforms, MCP servers, agents and internal tools for my team. Before that I worked on a full stack AI product, and I enjoy solving problems.</p>
-                  </div>
-                </div>
-                <div class="row">
-                  <div class="personal-info padd-15">
-                    <div class="row">
-                      <div class="info-item padd-15">
-                        <p>Location : <span>Ohio, United States</span> </p>
-                      </div>
-                      <div class="info-item padd-15">
-                        <p>Mail : <span>sainishithadangeti@gmail.com</span> </p>
-                      </div>
-                      <div class="info-item padd-15">
-                        <p>Hobbies : <span>Drawing & Painting</span> </p>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="skills padd-15">
-                    <div class="row">
-                      <h1 class="padd-15">Languages</h1>
-                      <ul class="skill-tags padd-15">
-                        <li>C</li>
-                        <li>C++</li>
-                        <li>Python</li>
-                      </ul></div>
-                  </div>
-                  <div class="skills padd-15">
-                    <div class="row">
-                      <h1 class="padd-15">IT Constructs</h1>
-                      <ul class="skill-tags padd-15">
-                        <li>Data Structures</li>
-                        <li>Algorithms</li>
-                        <li>Problem Solving</li>
-                      </ul></div>
-                  </div>
-                  <div class="skills padd-15">
-                    <div class="row">
-                      <h1 class="padd-15">New Technologies</h1>
-                      <ul class="skill-tags padd-15">
-                        <li>Data Visualisation</li>
-                        <li>Data Analytics</li>
-                        <li>SQL for Data Science</li>
-                      </ul></div>
-                  </div>
-                </div>
-                <div class="row">
-                  <div class="education padd-15">
-                    <h3 class="title">Education</h3>
-                    <div class="timeline-box padd-15">
-                      <div class="row">
-                        <div class="timeline shadow-dark">
-				 <!-- TimeLine Item -->
-                          <div class="timeline-item">
-                            <div class="circle-dot">
+    </footer>
 
-                            </div>
-                            <h6 class="timeline-date">
-                              <i class="fa fa-calendar"></i>
-                              2023-Present
-                            </h6>
-                            <h4 class="timeline-title">University of Cincinnati</h4>
-                            <p class="timeline-text">Masters of Science in Information Technology, Cincinnati, Ohio, United States.
-                              <br>
-                              Scored an aggregate of 3.9/4.0 CGPA.
-                            </p>
-                          </div>
-                          <!-- TimeLine Item End -->
-                          <!-- TimeLine Item -->
-                          <!-- TimeLine Item -->
-                          <div class="timeline-item">
-                            <div class="circle-dot">
-
-                            </div>
-                            <h6 class="timeline-date">
-                              <i class="fa fa-calendar"></i>
-                              2018-2022
-                            </h6>
-                            <h4 class="timeline-title">CMR College of Engineering and Technology, Hyderabad, Telangana</h4>
-                            <p class="timeline-text">Bachelor of Technology, Computer Science & Engineering.
-                              <br>
-                              Scored an aggregate of 9.12/10.00 CGPA.
-                            </p>
-                          </div>
-                          <!-- TimeLine Item End -->
-                          <!-- TimeLine Item -->
-                          <div class="timeline-item">
-                            <div class="circle-dot">
-
-                            </div>
-                            <h6 class="timeline-date">
-                              <i class="fa fa-calendar"></i>
-                              2016-2018
-                            </h6>
-                            <h4 class="timeline-title">Narayana Junior College, Nallakunta, Hyderabad</h4>
-                            <p class="timeline-text">Mathematics, Physics and Chemistry (MPC)
-                              <br>
-                              Secured an aggregate of 93.8% at the Board of Intermediate Education.
-                
-                            </p>
-                          </div>
-                          <!-- TimeLine Item End -->
-                          <!-- TimeLine Item -->
-                          <div class="timeline-item">
-                            <div class="circle-dot">
-
-                            </div>
-                            <h6 class="timeline-date">
-                              <i class="fa fa-calendar"></i>
-                              2015-2016
-                            </h6>
-                            <h4 class="timeline-title">Sri Chaitanya Techno School, Himayath Nagar, Hyderabad</h4>
-							<p class="timeline-text">
-                              Secured 10 CGPA at the Board of Secondary Education.
-							  </p>
-                          </div>
-                          <!-- TimeLine Item End -->
-                        </div>
-                    </div>
-                    </div>
-                  </div>
-                  <div class="education padd-15">
-                    <h3 class="title">Experience</h3>
-                    <div class="timeline-box padd-15">
-                      <div class="row">
-                        <div class="timeline shadow-dark">
-                          <!-- TimeLine Item -->
-<div class="timeline-item">
-                            <div class="circle-dot">
-                            </div>
-                            <h6 class="timeline-date">
-                              <i class="fa fa-calendar"></i>
-                              March, 2025 - Present
-                            </h6>
-                            <h4 class="timeline-title">FINRA, Contractor</h4>
-                            <div class="timeline-text">
-                              <ul class="timeline-list">
-                                <li>Build surveillance platforms and the detection patterns behind them, helping analysts identify and investigate activity of interest.</li>
-                                <li>Build MCP servers and AI agents that automate routine work and give teams simpler access to data and tools.</li>
-                                <li>Create dashboards and internal utilities that turn complex data into clear, usable views and make the team's day-to-day work easier.</li>
-                              </ul>
-                            </div>
-                          </div>
-                          <!-- TimeLine Item End -->
-                          <!-- TimeLine Item -->
-                          <div class="timeline-item">
-                            <div class="circle-dot">
-                            </div>
-                            <h6 class="timeline-date">
-                              <i class="fa fa-calendar"></i>
-                              September, 2024 - March, 2025
-                            </h6>
-                            <h4 class="timeline-title">Stealth AI Startup</h4>
-                            <div class="timeline-text">
-                              <ul class="timeline-list">
-                                <li>Built the user-facing frontend of an AI product using React.</li>
-                                <li>Developed the backend APIs in Python with FastAPI.</li>
-                                <li>Deployed the application on AWS using serverless Lambda functions.</li>
-                              </ul>
-                            </div>
-                          </div>
-
-
-				
-				
-
-				
-                          <div class="timeline-item">
-                            <div class="circle-dot">
-
-                            </div>
-				  <h6 class="timeline-date">
-                              <i class="fa fa-calendar"></i>
-                              January, 2022 - July, 2023
-                            </h6>
-                            <h4 class="timeline-title">OpenText Technologies India Private Limited</h4>
-                            <div class="timeline-text">
-                              <ul class="timeline-list">
-                                <li>Deployed applications in diverse environments including AWS, GCP, Azure, and on-premises servers (Windows, Linux - RHEL, SUSE, CentOS).</li>
-                                <li>Integrated Amazon Rekognition with OpenText Product for enhanced functionality.</li>
-                                <li>Led test automation efforts, successfully automated four features, and managed approximately 250 test cases.</li>
-                                <li>Proficient in debugging code and specialized in media analysis to extract valuable data from images and videos.</li>
-                              </ul>
-                            </div>
-							</div>
-							                          <div class="timeline-item">
-							<div class="circle-dot">
-
-                            </div>
-                            <h6 class="timeline-date">
-                              <i class="fa fa-calendar"></i>
-                              September, 2020 - October, 2020
-                            </h6>
-                            <h4 class="timeline-title">Technex IIT BHU Varanasi, Python Developer</h4>
-                            <p class="timeline-text">Developed and presented a language translator that
-supports around 108 languages. Analyzed and developed the project in Python using Tkinter
-and google trans. Submitted a report on the project. Received career guidance in the data analysis domain. Successfully received the internship certification offered by
-the organization.
-                            </p>
-							</div>
-							                          <div class="timeline-item">
-							<div class="circle-dot">
-
-                            </div>
-                            <h6 class="timeline-date">
-                              <i class="fa fa-calendar"></i>
-                              May, 2020 - June, 2020
-                            </h6>
-                            <h4 class="timeline-title">Dexterity Global Group, Research Intern (Technology Sector)</h4>
-                            <p class="timeline-text">Selected as one of the 1000 interns in a FORBES 30 under 30
-organization. Researched and presented an improvised quiz platform
-(website) for students across India. Prototyped a Dialogflow chatbot for the Quiz platform. Analyzed the organization's needs and developed a
-knowledge-sharing forum using PHP and MySQL for
-students. Completed the career readiness program
-offered by the organization. Displayed marketing skills by connecting 2 institutions and
-27+ individuals to one of the organization's platforms. Received an "Excellent" grade for the work done during the
-internship.
-                            </p>
-							
-                          </div>
-                          <!-- TimeLine Item End -->
-                        </div>
-                    </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
-        <!-- About Section End -->
-        <!-- Projects Section -->
-        <section class="project section" id="projects">
-          <div class="container">
-            <div class="row">
-              <div class="section-title padd-15">
-                <h2>My Projects</h2>
-              </div>
-            </div>
-            <div class="row">
-              <!-- Project Item -->
-              <div class="project-item padd-15">
-                <div class="project-item-inner shadow-dark">
-                  <div class="project-img">
-                    <img src="https://i.ibb.co/SNZMghd/13.jpg" alt="E-eaters food ordering website preview" loading="lazy">
-                  </div>
-                  <div class="project-info">
-                    <h4 class="project-title">E-eaters (Online Food Ordering System)</h4>
-                    <p class="project-description">E-eaters is a process of ordering food from a local restaurant or food cooperative and pre-booking of food for events or functions through internet. A customer will search for a favourite restaurant, usually filtered via type of cuisine and choose from available items, and choose delivery or pick-up. This E -eaters intends different types of forms with different of food varieties provides to user to buy online. E-eaters users can give order from any place and pay cash on delivery.
-					Technologies used are HTML, CSS, Java, and MySQL for the backend.
-                    </p>
-                    <div class="buttons">
-                      <a href="https://github.com/Nishitha393/E-eaters" target="_blank" rel="noopener noreferrer" class="btn">View Project</a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="project-item padd-15">
-                <div class="project-item-inner shadow-dark">
-                  <div class="project-img">
-                    <img src="https://i.ibb.co/hW8b0fv/trans.jpg" alt="Language translator app preview" loading="lazy">
-                  </div>
-                  <div class="project-info">
-                    <h4 class="project-title">Language Translator using Python</h4>
-                    <p class="project-description">
-					A language translator or text translator is a tool to translate text, words, and phrases from one language to any other language. It is like a dictionary where we can translate the text.
-The objective of this project is to translate text from one language to any other language in real time with a button click. This project will be built using the Tkinter and Googletrans libraries.
-In this project, the user enters text in any language and gets it translated into any other language by selecting the output language.
-Language Translator using Google Translate APIs in Python – Instantly Translate texts, words, and phrases from one language to another.
-                    </p>
-                    <div class="buttons">
-                      <a href="https://github.com/Nishitha393/Language-Translator" target="_blank" rel="noopener noreferrer" class="btn">View Project</a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-			  <div class="project-item padd-15">
-                <div class="project-item-inner shadow-dark">
-                  <div class="project-img">
-                    <img src="https://i.ibb.co/7x3JMv3/forum.png" alt="Dexterity Forum website preview" loading="lazy">
-                  </div>
-                  <div class="project-info">
-                    <h4 class="project-title">Dexterity Forum</h4>
-                    <p class="project-description">
-					The dexterity forum project is developed using PHP and MySQL and is based on the idea of sharing knowledge using the internet. The project is made up of two modules users and admin. Users can register themselves, ask questions, and answer anyone’s question, approve an answer given to asked question. Admin can create read update and delete notifications. Discussion forums can be successful in enhancing collaborative learning by attracting students to participate and interact.
-                    </p>
-                    <div class="buttons">
-                      <a href="https://github.com/Nishitha393/Dexterity_forum" target="_blank" rel="noopener noreferrer" class="btn">View Project</a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
-          <!-- Project Item End -->
-              <!-- Contact Section -->
-                <section class="contact section" id="contact">
-                  <div class="container">
-                    <div class="row">
-                      <div class="section-title padd-15">
-                        <h2>Contact Me</h2>
-                      </div>
-                    </div>
-                    <div class="row">
-                      <!-- Contact Info Item -->
-                      <div class="contact-info-item padd-15">
-                        <div class="icon">
-                          <i class="fa fa-envelope"></i>
-                        </div>
-                        <p>sainishithadangeti@gmail.com</p>
-                      </div>
-                      <!-- Contact Info Item End -->
-                      <!-- Contact Info Item -->
-                      <div class="contact-info-item padd-15">
-                        <div class="icon">
-                          <i class="fa fa-map-marker"></i>
-                        </div>
-                        <p>Ohio, United States of America</p>
-                      </div>
-                      <!-- Contact Info Item End -->
-                    </div>
-                    <!-- Contact Form -->
-                    <div class="row padd-15">
-                      <div class="contact-text">
-                        Let's get in touch
-                      </div>
-                    </div>
-                    <div class="row padd-15">
-                      <div class="buttons">
-                        <a href="mailto:sainishithadangeti@gmail.com" class="btn contact-btn">Mail Me</a>
-                      </div>
-                    </div>
-                    <!-- Contact Form End-->
-                  </div>
-              </section>
-      <!-- Contact Section End -->
-    </div>
-    <!-- Main Content End -->
-  </div>
-  <!-- Main Container End -->
-    <!-- Theme Switcher -->
-    <div class="theme-switch">
-      <button class="toggle-theme-switcher" type="button" aria-label="Open theme settings" aria-expanded="false">
-        <i class="fa fa-cog fa-spin" aria-hidden="true"></i>
-      </button>
-      <h5>Theme Switch</h5>
-      <ul>
-        <li><button type="button" class="theme-swatch" data-theme="red" title="red" aria-label="Red theme" style="background-color: #e40017;"></button></li>
-        <li><button type="button" class="theme-swatch" data-theme="blue" title="blue" aria-label="Blue theme" style="background-color: #0779e4;"></button></li>
-        <li><button type="button" class="theme-swatch" data-theme="green" title="green" aria-label="Green theme" style="background-color: #57d131;"></button></li>
-        <li><button type="button" class="theme-swatch" data-theme="purple" title="purple" aria-label="Purple theme" style="background-color: #a100ff;"></button></li>
-        <li><button type="button" class="theme-swatch" data-theme="yellow" title="yellow" aria-label="Yellow theme" style="background-color: #ffcc00;"></button></li>
-      </ul>
-      <h5>Mode Switch</h5>
-      <label>
-        <input type="radio" class="mode-switch" name="body-mode" value="light" checked>
-        Light
-      </label>
-      <label>
-        <input type="radio" class="mode-switch" name="body-mode" value="dark">
-        Dark
-      </label>
-    </div>
-    <!-- Theme Switcher End -->
-    <!-- Template Js -->
     <script src="./assets/script/script.js"></script>
-      <!-- JavaScript for Theme Switcher -->
-      <script src="./assets/script/themeSwitcher.js"></script>
-    <!-- JavaScript for Theme Switcher End -->
   </body>
 </html>
